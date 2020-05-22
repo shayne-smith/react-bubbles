@@ -27,9 +27,24 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain what a token is used for.
+
+When a server running services that require the client to be authenticated, the server can issue a JSON Web Token (JWT) as an authentication token in exchange for correct login credentials. A JWT is strings of cryptic text, which can be stored on the client-side using local storage or session storage. It gives the client access to restricted pages in the web app.
+
 - [ ] What steps can you take in your web apps to keep your data secure?
+
+Creating a Private Route component that requires an authorization token is a way to secure data. Since the client needs to retrieve a valid token by providing valid login credentials, this a method to securely store data in web apps.
+
 - [ ] Describe how web servers work.
+
+Web servers refer to the computer that stores the code for a website or the program that runs on such a computer. Digital resources are stored on a server and can be retrieved by a client through a URL and domain name. The web server then hosts the web app. A client with a browser can then access the web app on the web server. Copies of a website's source code are propagated to several servers around the globe, so that local clients can access a website quickly from all parts of the globe, instead of having to ping a server halfway around the world. 
+
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+POST HHTP request --- (C)reate
+GET HHTP request ---- (R)ead
+PUT HHTP request ---- (U)pdate
+DELETE HHTP request - (D)elete
+
 
 
 ## Project Set Up
